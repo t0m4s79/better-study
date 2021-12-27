@@ -15,7 +15,7 @@ app.listen((3000), () => {
 })
 
 app.get('/', (req,res) => {
-    res.render('landing.ejs')
+    res.render('index.ejs')
 })
 
 /**************************************/
@@ -24,4 +24,20 @@ app.get('/', (req,res) => {
 
 app.get('/dashboard', (req,res) =>{
     res.render('dashboard.ejs')
+})
+
+app.get('/files', (req,res) =>{
+    res.render('files.ejs')
+})
+
+app.get('/calendar', (req,res) =>{
+    res.render('calendar.ejs')
+})
+
+app.get('/statistics', (req,res) =>{
+    res.render('statistics.ejs')
+})
+
+app.get('/settings', (req,res) =>{
+    res.render('settings.ejs')
 })
