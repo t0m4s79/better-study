@@ -8,7 +8,7 @@ body{
 /* ------------- navbar styling --------------*/
 
 header {
-    background: #585858;
+    background: #E1E1E1;
 }
   
 header::after {
@@ -40,6 +40,13 @@ nav li{
     margin: 5px 10px;
     padding: 15px;
     font-size: 24px;
+    border-radius: 10%;
+}
+
+nav li:hover{
+    background-color: rgba(0,0,0, 0.05);
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+    
 }
 
 nav #login{
