@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src='https://cdn.plot.ly/plotly-2.8.3.min.js'></script>
 
 </head>
 <body>
@@ -18,12 +18,34 @@
 
     <div class="main">
         <div class="study-plan">
-            <h1> Study Plan 1</h1>
+            <h1>Histogram</h1>
+            <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
         </div>
 
         <div class="study-plan">
-            <h1> Study Plan 2</h1>
+            <h1>sdgdsg</h1>
         </div>
     </div>
+    <script>
+        var x1 = [];
+var x2 = [];
+for (var i = 0; i < 500; i ++) {
+	x1[i] = Math.random();
+	x2[i] = Math.random();
+}
+
+var You = {
+  x: x1,
+  type: "histogram",
+};
+var Friend = {
+  x: x2,
+  type: "histogram",
+};
+var data = [You, Friend];
+var layout = {barmode: "stack"};
+Plotly.newPlot('myDiv', data, layout);
+
+    </script>
 </body>
 </html>
