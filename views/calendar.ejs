@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
     <style>
         @charset "utf-8";
         /* CSS Document */
@@ -14,152 +15,6 @@
         /* ---------- http://weloveiconfonts.com/ ---------- */
          
         @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-         
-        *[class*="fontawesome-"]:before {
-          font-family: "FontAwesome", sans-serif;
-        }
-         
-        /* ---------- GENERAL ---------- */
-         
-        body {
-          background: #2de3fd;
-          color: #fff;
-          font: 300 100%/1.5em "Lato", sans-serif;
-          margin: 0;
-        }
-         
-        a {
-          text-decoration: none;
-        }
-         
-        h2 {
-          font-size: 2em;
-          line-height: 1.25em;
-          margin: 0.25em 0;
-        }
-         
-        h3 {
-          font-size: 1.5em;
-          line-height: 1em;
-          margin: 0.33em 0;
-        }
-         
-        table {
-          border-collapse: collapse;
-          border-spacing: 0;
-        }
-         
-        .container {
-          height: 538px;
-          left: 50%;
-          margin: -255px 0 0 -245px;
-          position: absolute;
-          top: 50%;
-          width: 510px;
-        }
-         
-        /* ---------- CALENDAR ---------- */
-         
-        .calendar {
-          text-align: center;
-        }
-         
-        .calendar header {
-          position: relative;
-        }
-         
-        .calendar h2 {
-          text-transform: uppercase;
-        }
-         
-        .calendar thead {
-          font-weight: 600;
-          text-transform: uppercase;
-        }
-         
-        .calendar tbody {
-          color: #fff;
-        }
-         
-        .calendar tbody td:hover {
-          border: 2px solid #00addf;
-        }
-         
-        .calendar td {
-          border: 2px solid transparent;
-          border-radius: 50%;
-          display: inline-block;
-          height: 4em;
-          line-height: 4em;
-          text-align: center;
-          width: 4em;
-        }
-         
-        .calendar .prev-month,
-        .calendar .next-month {
-          color: #cbd1d2;
-        }
-         
-        .calendar .prev-month:hover,
-        .calendar .next-month:hover {
-          border: 2px solid #cbd1d2;
-        }
-         
-        .current-day {
-          background: #00addf;
-          color: #f9f9f9;
-        }
-         
-        .event {
-          cursor: pointer;
-          position: relative;
-        }
-         
-        .event:after {
-          background: #00addf;
-          border-radius: 50%;
-          bottom: 0.5em;
-          display: block;
-          content: "";
-          height: 0.5em;
-          left: 50%;
-          margin: -0.25em 0 0 -0.25em;
-          position: absolute;
-          width: 0.5em;
-        }
-         
-        .event.current-day:after {
-          background: #f9f9f9;
-        }
-         
-        .btn-prev,
-        .btn-next {
-          border: 2px solid #cbd1d2;
-          border-radius: 50%;
-          color: #cbd1d2;
-          height: 2em;
-          font-size: 0.75em;
-          line-height: 2em;
-          margin: -1em;
-          position: absolute;
-          top: 50%;
-          width: 2em;
-        }
-         
-        .btn-prev:hover,
-        .btn-next:hover {
-          background: #cbd1d2;
-          color: #f9f9f9;
-        }
-         
-        .btn-prev {
-          left: 6em;
-        }
-         
-        .btn-next {
-          right: 6em;
-        }
-         
         </style>
 
 </head>
@@ -178,7 +33,8 @@
          
               <header>
          
-                <h2>April</h2>
+                <h2>January
+                </h2>
          
                 <a class="btn-prev fontawesome-angle-left" href="#"></a>
                 <a class="btn-next fontawesome-angle-right" href="#"></a>
@@ -206,54 +62,54 @@
                 <tbody>
          
                   <tr>
+                    <td class="prev-month">27</td>
+                    <td class="prev-month">28</td>
                     <td class="prev-month">29</td>
                     <td class="prev-month">30</td>
                     <td class="prev-month">31</td>
          
                     <td>1</td>
                     <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
                   </tr>
                   <tr>
          
+                    <td>3</td>
+                    <td>4</td>
                     <td>5</td>
                     <td>6</td>
-                    <td>7</td>
+                    <td class="event">7</td>
+                    <td class="current-day event">8</td>
                     <td>8</td>
-                    <td class="event">9</td>
-                    <td class="current-day event">10</td>
-                    <td>11</td>
                   </tr>
                   <tr>
+                    <td>10</td>
+                    <td>11</td>
                     <td>12</td>
                     <td>13</td>
                     <td>14</td>
                     <td>15</td>
                     <td>16</td>
+                  </tr>
+                  <tr>
+         
                     <td>17</td>
                     <td>18</td>
-                  </tr>
-                  <tr>
-         
                     <td>19</td>
-                    <td>20</td>
+                    <td class="event">20</td>
                     <td>21</td>
-                    <td class="event">22</td>
+                    <td>22</td>
                     <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
                   </tr>
          
                   <tr>
          
+                    <td>24/31</td>
+                    <td>25</td>
                     <td>26</td>
                     <td>27</td>
                     <td>28</td>
                     <td>29</td>
                     <td>30</td>
-                    <td class="next-month">1</td>
-                    <td class="next-month">2</td>
                   </tr>
          
                 </tbody>
