@@ -180,3 +180,39 @@ body{
     position: relative;
     font-size: 24px;
 }
+
+.planner > ul > li:hover{
+    color: var(--selected-color);
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+}
+
+.planner li button{
+    /* remove standard appearence from browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-size: 1.2em;
+
+    background: inherit;
+    border: none;
+}
+
+.planner button:hover{
+    cursor: pointer;
+    color: var(--selected-color);
+}
+
+.planner i:hover{
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+}
+
+.planner #dropdown{
+    display: none;
+}
+
+#dropdown ul{
+    padding: 10px;
+    text-align: start;
+}
