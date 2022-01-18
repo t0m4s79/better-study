@@ -21,12 +21,12 @@
             <h1 class="page-name">Statistics</h1>
             <div class="main-wrapper">
                 <div class="study-plan">
-                    <h1>Histogram</h1>
+                    <h1>Group</h1>
                     <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
                 </div>
         
                 <div class="study-plan">
-                    <h1>sdgdsg</h1>
+                    <h1>Average</h1>
                 </div>
             </div>
             
@@ -34,24 +34,59 @@
         
     </div>
     <script>
-        var x1 = [];
-var x2 = [];
-for (var i = 0; i < 500; i ++) {
-	x1[i] = Math.random();
-	x2[i] = Math.random();
-}
+        var graficos = [
+        {
+            x: ['Eu', 'João', 'Carlos', 'Maria'],
+            y: [90, 60, 30, 100],
+            type: 'bar',
+            marker:{
+                color: ['rgb(232,209,9)','rgb(215,91,21)','rgb(225,5,5)','rgb(16,190,33)']
+            }
+        },
+        {
+            x: ['Me', 'João', 'Jorge', 'Maria'],
+            y: [60, 75, 70, 60],
+            type: 'bar',
+        },
+        {
+            x: ['Me', 'João', 'Carlos', 'José'],
+            y: [100, 90, 95, 40],
+            type: 'bar',
+        },
+        {
+            x: ['Me', 'João', 'Carlos'],
+            y: [100, 10, 55],
+            type: 'bar',
+        },
+        {
+            x: ['Me', 'João', 'Carlos', 'Maria', 'Sofia'],
+            y: [15, 80, 10, 80, 50],
+            type: 'bar',
+        }
+        ]
+        var data =  [graficos[0]]
 
-var You = {
-  x: x1,
-  type: "histogram",
-};
-var Friend = {
-  x: x2,
-  type: "histogram",
-};
-var data = [You, Friend];
-var layout = {barmode: "stack"};
-Plotly.newPlot('myDiv', data, layout);
+
+        var cadeiras = [
+        {
+            title: 'Persuasive Computation'
+        },
+        {
+            title: 'Artificial Intelligence & Game Design'
+        },
+        {
+            title: 'Software Processes and Metrics'
+        },
+        {
+            title: 'Distributed Systems'
+        },
+        {
+            title: 'Multimedia Systems'
+        }
+        ];
+        var layout = cadeiras[0]
+ 
+        Plotly.newPlot('myDiv', data, layout);
 
     </script>
 </body>
