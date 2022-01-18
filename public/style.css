@@ -162,6 +162,13 @@ h1, h2, h3 {
     left: 0;
 }
 
+.graphs{
+    border: 1px solid rgb(182, 182, 182);
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 2em;
+}
+
 /* ------------ settings styling ----------------- */
 
 .settings ul{
