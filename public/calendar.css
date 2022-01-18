@@ -34,7 +34,17 @@
   place-items: center;
   display: grid;
   background: #f0f0f0;
-  padding: 2.5em;
+  position: relative;
+}
+
+.page-name {
+  position: absolute;
+  top: 0.5em;
+  color: #53b115;
+  border: 1px solid rgb(182, 182, 182);
+  padding: 0.65em 0 0.65em 2em;
+  width: 90%;
+  margin: 0;
 }
    
   /* ---------- CALENDAR ---------- */
@@ -158,17 +168,18 @@
 
 .warning {
   visibility: hidden;
-  width: 30em;
-  background-color: #555;
-  color: #fff;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   text-align: center;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
   top: 100%;
-  margin-left: -60px;
+  margin-left: -100px;
   opacity: 0;
   transition: opacity 0.3s;
+  padding: 1em 0;
 }
 
 .warning::after {
@@ -176,12 +187,14 @@
   position: absolute;
   bottom: 100%;
   left: 20%;
-  margin-left: -5px;
+  margin-left: 70px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent #555 transparent;
+  border-color: transparent transparent rgb(255, 255, 255) transparent;
 }
 
 .warning p{
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
 }
