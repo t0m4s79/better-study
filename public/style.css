@@ -169,6 +169,12 @@ h1, h2, h3 {
     padding: 2em;
 }
 
+.study-plan img{
+    width: 5em;
+    height: 5em;
+    overflow: hidden;
+}
+
 /* ------------ settings styling ----------------- */
 
 .settings ul{
