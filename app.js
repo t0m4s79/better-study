@@ -42,8 +42,24 @@ app.get('/settings', (req,res) =>{
     res.render('settings.ejs')
 })
 
-app.get('/studyplan', (req,res) =>{
-    res.render('studyplan.ejs')
+app.get('/pc', (req,res) =>{
+    res.render('pc.ejs')
+})
+
+app.get('/pms', (req,res) =>{
+    res.render('pms.ejs')
+})
+
+app.get('/ai', (req,res) =>{
+    res.render('ai.ejs')
+})
+
+app.get('/ds', (req,res) =>{
+    res.render('ds.ejs')
+})
+
+app.get('/ms', (req,res) =>{
+    res.render('ms.ejs')
 })
 
 app.get('/signup', (req,res) =>{
