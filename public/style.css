@@ -16,7 +16,7 @@ body{
     grid-template-columns: minmax(300px, 20%) 1fr;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-weight: 400;
 }
 
@@ -140,11 +140,17 @@ h1, h2 {
     max-height: 17em;
     background-color: var(--bg-color);
     text-align: center;
+    padding: 2em;
 }
 
 .study-plan:hover{
     color: var(--selected-color);
     box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+}
+
+.study-plan h3 {
+    color: #6e6e6e;
+    padding-top: 1em;
 }
 
 .study-plan a{
