@@ -1,6 +1,6 @@
 :root{
-    --selected-color:hotpink;
-    --bg-color: grey;
+    --selected-color:rgb(2, 6, 233);
+    --bg-color: #e0ecf1;
 }
 
 body{
@@ -9,27 +9,80 @@ body{
     font-size: 14px;
     margin: 0;
     display: grid;
-    grid-template-columns: minmax(200px, 25%) 1fr;
+    grid-template-columns: minmax(300px, 25%) 1fr;
 }
 
 
 /* ------------- navbar styling --------------*/
 
 .vertical-nav {
-    background: #E1E1E1;
+    background: var(--bg-color);
+    overflow: hidden;
+    width: 300px;
+    height: 100vh;
+    position: sticky;
+}
+
+.nav-link {
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+}
+
+.nav-link:hover {
+    color: var(--selected-color);
+}
+
+.user {
+    display: grid;
+    grid-template-columns: minmax(10px,60%)1fr;
+    place-items: center;
+    width: 200px;
+    height: auto;
+}
+
+.user a {
+    display: inline-block;
+}
+
+.user a:hover {
+    color: var(--selected-color);
+}
+
+.user-img {
+    display: grid;
+    place-items: center;
+}
+
+.user-img img {
+    width: 1.3em !important;
+    height: auto !important;
+}
+
+.nav-name {
+    font-size: 1rem;
 }
 
 .vertical-nav ul{
     padding: 0;
-    margin: 0;  
+    margin: 0.2em;  
     list-style: none;
 }
 
 .vertical-nav li{
     display: grid;
     place-items: center;
-    padding: 2em 1em;
+    padding: 0.3em 1em;
     font-size: 1.5rem;
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.vertical-nav li:hover{
+    background: #d1e1e9;
+    color: var(--selected-color);
+    border: 1px solid rgb(95, 95, 95);
 }
 
 .vertical-nav li img{
@@ -50,11 +103,12 @@ body{
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 2.5em;
+    width: 75vw;
 }
 
 .study-plan{
     max-height: 17em;
-    background-color: #E1E1E1;
+    background-color: var(--bg-color);
     text-align: center;
 }
 
@@ -80,7 +134,7 @@ body{
     margin: 3% 0%;
     padding: 3%;
     text-align: center;
-    background-color: #E1E1E1;
+    background-color: var(--bg-color);
     position: relative;
     font-size: 24px;
 }
@@ -114,7 +168,7 @@ body{
     margin: 3% 0%;
     padding: 3%;
     text-align: center;
-    background-color: #E1E1E1;
+    background-color: var(--bg-color);
     position: relative;
     font-size: 24px;
 }

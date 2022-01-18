@@ -45,3 +45,11 @@ app.get('/settings', (req,res) =>{
 app.get('/studyplan', (req,res) =>{
     res.render('studyplan.ejs')
 })
+
+app.get('/signup', (req,res) =>{
+    res.render('signup.ejs')
+})
+
+app.get('/login', (req,res) =>{
+    res.render('login.ejs')
+})
