@@ -9,7 +9,7 @@ body{
     font-size: 14px;
     margin: 0;
     display: grid;
-    grid-template-columns: minmax(300px, 25%) 1fr;
+    grid-template-columns: minmax(300px, 20%) 1fr;
 }
 
 
@@ -17,8 +17,7 @@ body{
 
 .vertical-nav {
     background: var(--bg-color);
-    overflow: hidden;
-    width: 300px;
+    width: auto;
     height: 100vh;
     position: sticky;
 }
@@ -99,11 +98,20 @@ body{
 /* ------------ body styling ----------------- */
 
 .main{
+    padding: 0.5em 1em 0.5em 1em;
+    background: #f0f0f0;
+}
+
+.container {
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.main-wrapper {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background: var(--bg-color);
     padding: 2.5em;
-    width: 75vw;
 }
 
 .study-plan{

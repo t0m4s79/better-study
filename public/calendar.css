@@ -1,11 +1,6 @@
 *[class*="fontawesome-"]:before {
     font-family: "FontAwesome", sans-serif;
   }
-
-body {
-    font: 300 100%/1.5em "Lato", sans-serif;
-    margin: 0;
-  }
    
   a {
     text-decoration: none;
@@ -29,19 +24,24 @@ body {
   }
    
   .container {
-    height: 538px;
-    width: 510px;
+    width: max-content;
+    height: max-content;
+    display: grid;
+    place-items: center;
   }
 
 .main{
   place-items: center;
+  display: grid;
+  background: #f0f0f0;
+  padding: 2.5em;
 }
    
   /* ---------- CALENDAR ---------- */
    
   .calendar {
     text-align: center;
-    background: #E1E1E1;
+    background: var(--bg-color);
     color: #000;
   }
    
