@@ -109,6 +109,26 @@ body {
   .event.current-day:after {
     background: #f9f9f9;
   }
+
+  .important {
+    background: rgba(209, 0, 0, 0.5);
+    position: relative;
+    display: inline;
+  }
+
+  .important::after{
+    background: rgba(209, 0, 0, 0);
+  }
+
+  .important:hover {
+    border-radius: 50%;
+    border-color: red;
+  }
+
+  .important:hover .warning{
+    visibility: visible;
+    opacity: 1;
+  }
    
   .btn-prev,
   .btn-next {
@@ -135,3 +155,33 @@ body {
   .btn-next {
     right: 6em;
   }
+
+.warning {
+  visibility: hidden;
+  width: 30em;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.warning::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.warning p{
+  font-size: 1.5rem;
+}
