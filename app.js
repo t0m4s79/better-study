@@ -41,3 +41,7 @@ app.get('/statistics', (req,res) =>{
 app.get('/settings', (req,res) =>{
     res.render('settings.ejs')
 })
+
+app.get('/studyplan', (req,res) =>{
+    res.render('studyplan.ejs')
+})
