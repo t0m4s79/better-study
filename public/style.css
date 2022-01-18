@@ -195,7 +195,6 @@ h1, h2, h3 {
 
 /* ------------ plan styling ----------------- */
 
-
 .planner {
     margin: 5%;
 }
@@ -247,4 +246,61 @@ h1, h2, h3 {
 #dropdown ul{
     padding: 10px;
     text-align: start;
+}
+
+/* ------------ forum styling ----------------- */
+
+.filters ul {
+    list-style: none;
+    text-align: right;
+    padding: 0 1rem;
+}
+.filters li{
+    display: inline;
+    padding: 1rem;
+    border: 1px solid rgb(182, 182, 182);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.filters li:hover{
+    color: var(--selected-color);
+    background: #d1e1e9;
+    font-weight: bolder;
+}
+
+.topics{
+    background-color: var(--bg-color);
+    text-align: start;
+}
+
+.topics .posts ul{
+    list-style: none;
+    padding: 0;
+    max-width: 75%;
+}
+
+.topics .posts li{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'stats summary';
+    grid-template-columns: 10% 1fr;
+    border: 1px solid rgb(182, 182, 182);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.topics .posts li .stats{
+    padding: 0;
+    text-align: center;
+}
+.topics .posts li .stats h3{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.topics .posts li .summary h2{
+    color: var(--selected-color);
+    font-weight: bold;
 }

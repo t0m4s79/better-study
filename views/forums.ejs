@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Forums</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="vertical-nav">
+            <ul>
+                <%- include('partial/vertical-nav') %>
+            </ul>
+            
+        </div>
+    
+        <div class="main">
+            <div class="container">
+                <h1 class="page-name">Forums</h1>
+                <div class="main-wrapper">
+                    <div class="topics">
+
+                        <div class="filters">
+                            <ul>
+                                <li>
+                                    Trending
+                                </li>
+                                <li>
+                                    Newest
+                                </li>
+                                <li>
+                                    My Posts
+                                </li>
+                            </ul>
+
+                        </div>
+                        <ul class="posts">
+                            <li>
+                                <div class='stats'>
+                                    <h3>14</h3>votes
+                                    <h3>4</h3>answers
+                                </div>
+                                <div class="summary">
+                                    <a href="https://stackoverflow.com/questions/12102826/jquery-toggleslow-animation-from-top-down">
+                                        <h2>jQuery: toggle('slow') animation from top down?</h2></a>
+                                    <p>In my code I use jQuery's toggle('slow') animation to make a hidden div appear/disappear. 
+                                        It expands from the upper left to the bottom right.
+                                        <br>
+                                        How can I make it expand from the top towards the bottom, instead (no left-to-right growth)</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class='stats'>
+                                    <h3>6254</h3>votes
+                                    <h3>42</h3>answers
+                                </div>
+                                <div class="summary">
+                                    <a href="https://stackoverflow.com/questions/14220321/how-to-return-the-response-from-an-asynchronous-call">
+                                        <h2>How to return the response from an asynchronous call</h2></a>
+                                    <p>I have a function foo which makes an asynchronous request. How can I return the response/result from foo?
+
+                                        I am trying to return the value from the callback, as well as assigning the result to a local variable 
+                                        inside the function... <!-- and returning that one, but none of those ways actually return the response 
+                                        (they all return undefined or whatever the initial value of the variable result is).--></p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class='stats'>
+                                    <h3>1537</h3>votes
+                                    <h3>47</h3>answers
+                                </div>
+                                <div class="summary">
+                                    <a href="https://stackoverflow.com/questions/396145/how-can-i-vertically-center-a-div-element-for-all-browsers-using-css">
+                                        <h2>How can I vertically center a div element for all browsers using CSS?</h2></a>
+                                    <p>I want to center a div vertically with CSS. I don't want tables or JavaScript, 
+                                        but only pure CSS. I found some solutions, but all of them are missing Internet Explorer 6 support...</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+</body>
+</html>

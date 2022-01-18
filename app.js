@@ -69,3 +69,7 @@ app.get('/signup', (req,res) =>{
 app.get('/login', (req,res) =>{
     res.render('login.ejs')
 })
+
+app.get('/forums', (req,res) =>{
+    res.render('forums.ejs')
+})
