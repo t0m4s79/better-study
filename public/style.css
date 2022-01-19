@@ -173,6 +173,34 @@ h1, h2, h3 {
     left: 0;
 }
 
+.new-plan {
+    padding: 1em;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.new-plan label{
+    margin: 1em;
+    padding: 1em;
+}
+.new-plan input{
+    margin: 1em 0;
+}
+
+.new-plan .radio{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.radio div{
+    border: 1px solid rgb(182, 182, 182);
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 5%;
+}
+
 /* ------------ settings styling ----------------- */
 
 .settings ul{

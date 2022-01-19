@@ -73,3 +73,7 @@ app.get('/login', (req,res) =>{
 app.get('/forums', (req,res) =>{
     res.render('forums.ejs')
 })
+
+app.get('/new-plan', (req,res) =>{
+    res.render('new-plan.ejs')
+})
