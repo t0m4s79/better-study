@@ -1,5 +1,5 @@
 :root{
-    --selected-color:rgb(2, 6, 233);
+    --selected-color:rgb(0, 2, 94);
     --bg-color: #e0ecf1;
 }
 
@@ -43,7 +43,7 @@ h1, h2, h3 {
 
 .user {
     display: grid;
-    grid-template-columns: minmax(10px,60%)1fr;
+    grid-template-columns: minmax(10px,90%)1fr;
     place-items: center;
     width: 200px;
     height: auto;
@@ -63,7 +63,7 @@ h1, h2, h3 {
 }
 
 .user-img img {
-    width: 1.3em !important;
+    width: 1em !important;
     height: auto !important;
 }
 
@@ -133,12 +133,13 @@ h1, h2, h3 {
     width: 100%;
     top: 0;
     margin: 0;
+    background-color: white;
 }
 
 .study-plan{
     border: 1px solid rgb(182, 182, 182);
     max-height: 17em;
-    background-color: var(--bg-color);
+    background-color: rgb(240, 242, 255);
     text-align: center;
     padding: 2em;
 }
@@ -148,9 +149,19 @@ h1, h2, h3 {
     box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
 }
 
+.study-plan img{
+    width: 5em;
+    height: 5em;
+    overflow: hidden;
+}
+
 .study-plan h3 {
     color: #6e6e6e;
     padding-top: 1em;
+}
+
+.study-plan h2 {
+    margin: 0;
 }
 
 .study-plan a{
@@ -160,19 +171,6 @@ h1, h2, h3 {
     height: 100%;
     top: 0;
     left: 0;
-}
-
-.graphs{
-    border: 1px solid rgb(182, 182, 182);
-    background-color: var(--bg-color);
-    text-align: center;
-    padding: 2em;
-}
-
-.study-plan img{
-    width: 5em;
-    height: 5em;
-    overflow: hidden;
 }
 
 /* ------------ settings styling ----------------- */
@@ -185,7 +183,7 @@ h1, h2, h3 {
     margin: 3% 0%;
     padding: 3%;
     text-align: center;
-    background-color: var(--bg-color);
+    background-color: rgb(240, 242, 255);
     position: relative;
     font-size: 1.3rem;
     border: 1px solid rgb(182, 182, 182);
@@ -208,6 +206,7 @@ h1, h2, h3 {
 
 /* ------------ plan styling ----------------- */
 
+
 .planner {
     margin: 5%;
 }
@@ -219,7 +218,7 @@ h1, h2, h3 {
     margin: 3% 0%;
     padding: 3%;
     text-align: center;
-    background-color: var(--bg-color);
+    background-color: rgb(240, 242, 255);
     position: relative;
     font-size: 24px;
     border: 1px solid rgb(182, 182, 182);
@@ -259,61 +258,4 @@ h1, h2, h3 {
 #dropdown ul{
     padding: 10px;
     text-align: start;
-}
-
-/* ------------ forum styling ----------------- */
-
-.filters ul {
-    list-style: none;
-    text-align: right;
-    padding: 0 1rem;
-}
-.filters li{
-    display: inline;
-    padding: 1rem;
-    border: 1px solid rgb(182, 182, 182);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-}
-
-.filters li:hover{
-    color: var(--selected-color);
-    background: #d1e1e9;
-    font-weight: bolder;
-}
-
-.topics{
-    background-color: var(--bg-color);
-    text-align: start;
-}
-
-.topics .posts ul{
-    list-style: none;
-    padding: 0;
-    max-width: 75%;
-}
-
-.topics .posts li{
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-areas:
-        'stats summary';
-    grid-template-columns: 10% 1fr;
-    border: 1px solid rgb(182, 182, 182);
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.topics .posts li .stats{
-    padding: 0;
-    text-align: center;
-}
-.topics .posts li .stats h3{
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.topics .posts li .summary h2{
-    color: var(--selected-color);
-    font-weight: bold;
 }
