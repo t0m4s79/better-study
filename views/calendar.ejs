@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <style>
+        @charset "utf-8";
+        /* CSS Document */
+         
+        /* ---------- FONTAWESOME ---------- */
+        /* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+        /* ---------- http://weloveiconfonts.com/ ---------- */
+         
+        @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+        </style>
+
+</head>
+<body>
+    <div class="vertical-nav">
+        <ul>
+            <%- include('partial/vertical-nav') %>
+        </ul>
+        
+    </div>
+
+    <div class="main">
+        <h1 class="page-name">Calendar</h1>
+        <div class="container">
+            <div class="calendar">
+         
+              <header>
+         
+                <h2>January
+                </h2>
+         
+                <a class="btn-prev fontawesome-angle-left" href="#"></a>
+                <a class="btn-next fontawesome-angle-right" href="#"></a>
+         
+              </header>
+         
+              <table>
+         
+                <thead>
+         
+                  <tr>
+         
+                    <td>Mo</td>
+                    <td>Tu</td>
+                    <td>We</td>
+                    <td>Th</td>
+                    <td>Fr</td>
+                    <td>Sa</td>
+                    <td>Su</td>
+         
+                  </tr>
+         
+                </thead>
+         
+                <tbody>
+         
+                  <tr>
+                    <td class="prev-month">27</td>
+                    <td class="prev-month">28</td>
+                    <td class="prev-month">29</td>
+                    <td class="prev-month">30</td>
+                    <td class="prev-month">31</td>
+         
+                    <td>1</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+         
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="event">7</td>
+                    <td>8</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td class="current-day event">15</td>
+                    <td>16</td>
+                  </tr>
+
+                  <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td class="event important">19
+                      <div class="warning">
+                        <p>You are near the deadline!<br>Make sure you have done everything!</p>
+                      </div>
+                    </td>
+                    <td class="event">20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                  </tr>
+         
+                  <tr>
+                    <td>24/31</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                  </tr>
+         
+                </tbody>
+         
+              </table>
+         
+            </div>
+
+          </div>
+    </div>
+</body>
+</html>

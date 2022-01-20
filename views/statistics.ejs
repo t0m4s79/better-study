@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://cdn.plot.ly/plotly-2.8.3.min.js'></script>
+
+</head>
+<body>
+    <div class="vertical-nav">
+        <ul>
+            <%- include('partial/vertical-nav') %>
+        </ul>
+        
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <h1 class="page-name">Statistics</h1>
+            <div class="main-wrapper">
+                <div class="graphs">
+                    <h1>Group</h1>
+                    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+                </div>
+        
+                <div class="graphs">
+                    <h1>Average</h1>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        var graficos = [
+        {
+            x: ['Eu', 'João', 'Carlos', 'Maria'],
+            y: [90, 60, 30, 100],
+            type: 'bar',
+            marker:{
+                color: ['rgb(232,209,9)','rgb(215,91,21)','rgb(225,5,5)','rgb(16,190,33)']
+            }
+        },
+        {
+            x: ['Me', 'João', 'Jorge', 'Maria'],
+            y: [60, 75, 70, 60],
+            type: 'bar',
+        },
+        {
+            x: ['Me', 'João', 'Carlos', 'José'],
+            y: [100, 90, 95, 40],
+            type: 'bar',
+        },
+        {
+            x: ['Me', 'João', 'Carlos'],
+            y: [100, 10, 55],
+            type: 'bar',
+        },
+        {
+            x: ['Me', 'João', 'Carlos', 'Maria', 'Sofia'],
+            y: [15, 80, 10, 80, 50],
+            type: 'bar',
+        }
+        ]
+        var data =  [graficos[0]]
+
+
+        var cadeiras = [
+        {
+            title: 'Persuasive Computation'
+        },
+        {
+            title: 'Artificial Intelligence & Game Design'
+        },
+        {
+            title: 'Software Processes and Metrics'
+        },
+        {
+            title: 'Distributed Systems'
+        },
+        {
+            title: 'Multimedia Systems'
+        }
+        ];
+        var layout = cadeiras[0]
+ 
+        Plotly.newPlot('myDiv', data, layout);
+
+    </script>
+</body>
+</html>

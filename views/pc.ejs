@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="vertical-nav">
+        <ul>
+            <%- include('partial/vertical-nav') %>
+        </ul>
+        
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <h1 class="page-name">Persuasive Computing</h1>
+            <div class="main-wrapper">
+                <div class="planner">
+                    <ul>
+                        <li>
+                            Week 1
+                            <button class="dropbtn" class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Introduction to the course
+                                    </li>
+                                    <li>
+                                        Behavioral Induction Technologies
+                                    </li>
+                                    <li>
+                                        Theory of Dual Process: <br>
+                                        System 1 VS System 2
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 2
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Fogg's Behavioral Model
+                                    </li>
+                                    <li>
+                                        The 4th Trend in Computing
+                                    </li>
+                                    <li>
+                                        Principles of Persuasion
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 3
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Subtle Computing
+                                    </li>
+                                    <li>
+                                        Subtle Clues
+                                    </li>
+                                    <li>
+                                        Subly
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 4
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Nudges
+                                    </li>
+                                    <li>
+                                        What You Get Is What You Need
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 5
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Persuasive Computing for Well Being
+                                    </li>
+                                    <li>
+                                        Vision and Strategy
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            Week 6
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Embodied Interaction
+                                    </li>
+                                    <li>
+                                        Moonshot Thinking
+                                    </li>
+                                    <li>
+                                        Behavioral Design
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            Week 7
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Gamification
+                                    </li>
+                                    <li>
+                                        Gamification 101: <br>
+                                        An Introduction to the Use of Game Dynamics  
+                                        to Influence Behavior
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    <script>
+        $('.dropbtn').click(function(){
+            $(this).next("#dropdown").slideToggle("slow");
+        });
+    </script>
+</body>
+</html>

@@ -3,10 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 <body>
     <div class="vertical-nav">
@@ -17,13 +15,58 @@
     </div>
 
     <div class="main">
-        <div class="study-plan">
-            <h1> Study Plan 1</h1>
+        <div class="container">
+            <h1 class="page-name">Study Plans</h1>
+            <div class="main-wrapper">
+                <div class="study-plan">
+                    <a href="pc">
+                        <progress value="95" max="100"></progress>
+                        <h3>Informatics</h3>
+                        <h2>Persuasive Computing</h2>
+                        <img src="./images/badge.svg" style="width: 50px; margin: 0;">
+                    </a>
+                </div>
+        
+                <div class="study-plan">
+                    <a href="ai">
+                        <progress value="80" max="100"></progress>
+                        <h3>Informatics</h3>
+                        <h2>Artificial Intelligence & Game Design</h2>
+                    </a>
+                </div>
+                <div class="study-plan">
+                    <a href="pms">
+                        <progress value="100" max="100"></progress>
+                        <h3>Informatics</h3>
+                        <h2>Software Processes and Metrics</h2>
+                        <img src="./images/badge.svg" style="width: 50px; margin: 0;">
+                    </a>
+                </div>
+                <div class="study-plan">
+                    <a href="ds">
+                        <progress value="100" max="100"></progress>
+                        <h3>Informatics</h3>
+                        <h2>Distributed Systems</h2>
+                        <img src="./images/badge1.svg" style="width: 50px; margin: 0;">
+                    </a>
+                </div>
+                <div class="study-plan">
+                    <a href="ms">
+                        <progress value="10" max="100"></progress>
+                        <h3>Informatics</h3>
+                        <h2>Multimedia Systems</h2>
+                        <img src="./images/badge1.svg" style="width: 50px; margin: 0;">
+                    </a>
+                </div>
+                <div class="study-plan">
+                    <a href="new-plan">
+                        <img src="./images/noun-new-3656622.svg" style="width: 7em; height: 7em; overflow: hidden;">
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="study-plan">
-            <h1> Study Plan 2</h1>
-        </div>
+        
+        
     </div>
 </body>
 </html>

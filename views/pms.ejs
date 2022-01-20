@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="vertical-nav">
+        <ul>
+            <%- include('partial/vertical-nav') %>
+        </ul>
+        
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <h1 class="page-name">Software Processes and Metrics</h1>
+            <div class="main-wrapper">
+                <div class="planner">
+                    <ul>
+                        <li>
+                            Week 1
+                            <button class="dropbtn" class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Introduction
+                                    </li>
+                                    <li>
+                                        Basics
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 2
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Introduction
+                                    </li>
+                                    <li>
+                                        Basics
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 3
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Introduction
+                                    </li>
+                                    <li>
+                                        Basics
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 4
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Introduction
+                                    </li>
+                                    <li>
+                                        Basics
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li>
+                            Week 5
+                            <button class="dropbtn"><i class='fas fa-chevron-circle-down rotate'></i></button>
+        
+                            <div id="dropdown">
+                                <ul>
+                                    <li>
+                                        Introduction
+                                    </li>
+                                    <li>
+                                        Basics
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    <script>
+        $('.dropbtn').click(function(){
+            $(this).next("#dropdown").slideToggle("slow");
+        });
+    </script>
+</body>
+</html>

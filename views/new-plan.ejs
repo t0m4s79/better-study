@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="vertical-nav">
+        <ul>
+            <%- include('partial/vertical-nav') %>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <h1 class="page-name">New Plan</h1>
+            <div class="main-wrapper">
+                <div class="study-plan">                    
+                    <div class="new-plan">
+                        <form>
+                            <label>Study Plan Name</label>
+                            <input type="text" placeholder="Enter a name">
+                            <br>
+                            <label>Area of Study</label>
+                            <input type="text" placeholder="Your area of study">
+                            <br>
+                            <div class="radio">
+                                
+                                <label>Type of Plan:</label><br>
+                                <div>
+                                    <input type="radio" id="preset" name="plan">
+                                    <label for="preset">Preset</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="madeby" name="plan">
+                                    <label for="madeby">Made by Others</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="custom" name="plan">
+                                    <label for="custom">Custom</label><br>
+                                </div>
+                                
+                            </div>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+</body>
+</html>
